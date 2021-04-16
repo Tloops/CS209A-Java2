@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.sustech.gol.view.GameOverviewController">
+   <children>
+      <SplitPane dividerPositions="0.46770601336302897" layoutX="408.0" layoutY="195.0" prefHeight="500.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="421.0">
+               <children>
+                  <GridPane fx:id="gridPane" alignment="CENTER" gridLinesVisible="true" layoutX="41.0" layoutY="115.0" prefHeight="350.0" prefWidth="350.0" AnchorPane.topAnchor="115.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+                  <Label layoutX="103.0" layoutY="66.0" text="Generation:" AnchorPane.topAnchor="66.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="generationTextArea" layoutX="233.0" layoutY="66.0" prefHeight="30.0" prefWidth="80.0" AnchorPane.topAnchor="66.0" />
+                  <Button layoutX="235.0" layoutY="488.0" mnemonicParsing="false" onAction="#handleReset" prefHeight="60.0" prefWidth="120.0" text="Reset" textAlignment="CENTER" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="235.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                  <Button layoutX="53.0" layoutY="488.0" mnemonicParsing="false" onAction="#handlePlay" prefHeight="60.0" prefWidth="120.0" text="Play" textAlignment="CENTER" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="53.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                  <Button layoutX="41.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleOpen" text="Open" AnchorPane.topAnchor="22.0" />
+                  <Button layoutX="123.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleSaveAs" text="SaveAs" AnchorPane.topAnchor="22.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="498.0" prefWidth="482.0">
+               <children>
+                  <Label layoutX="113.0" layoutY="21.0" text="Game of Life" textAlignment="CENTER" textFill="#0faaff" textOverrun="CLIP" AnchorPane.leftAnchor="113.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font name="System Bold" size="43.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Label>
+                  <ImageView fitHeight="94.0" fitWidth="90.0" layoutX="27.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../resources/images/block.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="27.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../resources/images/blinker.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="27.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../resources/images/glider.gif" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="28.0" layoutY="211.0" mnemonicParsing="false" onAction="#handlePreset1" text="Preset1" />
+                  <Button layoutX="28.0" layoutY="374.0" mnemonicParsing="false" onAction="#handlePreset2" text="Preset2" />
+                  <Button layoutX="28.0" layoutY="537.0" mnemonicParsing="false" onAction="#handlePreset3" text="Preset3" />
+                  <Label alignment="TOP_LEFT" layoutX="140.0" layoutY="108.0" text="Rule:">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" layoutX="140.0" layoutY="169.0" prefHeight="79.0" prefWidth="323.0" text="1. Any live cell with less then 2 living neighbours dies (underpopulation)." textOverrun="WORD_ELLIPSIS" wrapText="true" />
+                  <Label alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" layoutX="140.0" layoutY="260.0" prefHeight="79.0" prefWidth="323.0" text="2. Any live cell with 2 or 3 live neighbours continues to live to the next generation." textOverrun="WORD_ELLIPSIS" wrapText="true" />
+                  <Label alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" layoutX="140.0" layoutY="363.0" prefHeight="79.0" prefWidth="323.0" text="3. But, any live cell with more than 3 neighbours dies (overpopulation)." textOverrun="WORD_ELLIPSIS" wrapText="true" />
+                  <Label alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" layoutX="140.0" layoutY="438.0" prefHeight="79.0" prefWidth="323.0" text="4. And, any dead cell with 3 (ie exactly 3) live neighbours becomes alive (reproduction)." textOverrun="WORD_ELLIPSIS" wrapText="true" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

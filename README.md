@@ -9,6 +9,8 @@ If this repository DO help you, please give me a **STAR**:star:!
 
 The code is just for reference, **Plagiarism** is not recommended.
 
+It seems that Adam is leaving, so the exam information here may be not so helpful.
+
 
 
 ## Midterm
@@ -34,3 +36,5 @@ Question 3: 写个猜数字的java程序，要求足够接近真实java代码
 Question 4: JokeSocket，手写socket，裂开，还好打印了lab的socket编程的代码（第一问实现protocol本身，第二问写server，第三问写client）
 
 Question 5: regex，考的需要我们匹配一个规定email的正则表达式，最后一节课讲的例子恰好就是这个题……算是原题吧
+
+6.17更新：\*\*，果然没考好，GG

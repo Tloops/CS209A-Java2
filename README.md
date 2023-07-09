@@ -11,6 +11,8 @@ The code is just for reference, **Plagiarism** is not recommended.
 
 It seems that Adam is leaving, so the exam information here may be not so helpful.
 
+The project code of my group is released here: [magic-square](https://github.com/quantum-square/magic-square).
+
 
 
 ## Midterm
